@@ -91,7 +91,7 @@ cd ecommerce-app
 ```
 cd server_side/online_api
 npm install
-npm start
+nodemon index.js
 ```
 
 ---

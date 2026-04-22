@@ -145,7 +145,7 @@ JWT_SECRET=your_secret_key
 
 **Fayas T M**
 📧 Email: [fayastm03@gmail.com](mailto:fayastm03@gmail.com)
-🔗 LinkedIn: https://www.linkedin.com/in/fayas-tm-098467322
+🔗 LinkedIn: https://www.linkedin.com/in/fayas-t-m-098467322/
 💻 GitHub: https://github.com/fayastm03
 
 ---

@@ -129,8 +129,9 @@ JWT_SECRET=your_secret_key
 ---
 
 ## 📸 Screenshots
+<img width="715" height="1562" alt="image" src="https://github.com/user-attachments/assets/547914ab-ed1f-4a95-92e1-4eb3750545c8" />
+<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/191f4640-2db8-4dd8-913d-127e0142f609" />
 
-*Add screenshots of your application (mobile + admin panel) to showcase UI and features.*
 
 ---
 

@@ -11,15 +11,15 @@ class LoginScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FlutterLogin(
-      // savedEmail: 'testing@gmail.com',
-      // savedPassword: '12345',
       loginAfterSignUp: false,
       logo: const AssetImage('assets/images/logo.png'),
       onLogin: (loginData) {
         context.userProvider.login(loginData);
+        return null;
       },
       onSignup: (SignupData data) {
         context.userProvider.register(data);
+        return null;
       },
       onSubmitAnimationCompleted: () {
         if (context.userProvider.getLoginUser()?.sId != null) {

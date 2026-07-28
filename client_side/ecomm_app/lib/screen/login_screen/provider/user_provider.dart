@@ -24,7 +24,7 @@ class UserProvider extends ChangeNotifier {
   Future<String?> login(LoginData data) async {
     try {
       Map<String, dynamic> loginData = {
-        "name": data.name?.toLowerCase(),
+        "name": data.name.toLowerCase(),
         "password": data.password
       };
       final response = await service.addItem(

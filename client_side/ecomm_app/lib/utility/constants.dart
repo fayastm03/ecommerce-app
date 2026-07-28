@@ -1,8 +1,11 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
-final MAIN_URL = Platform.isIOS
-    ? 'http://localhost:3000' // iPhone Simulator
-    : 'http://10.0.2.2:3000';
+final MAIN_URL = kIsWeb
+    ? 'http://localhost:3000' // Web (Chrome, Firefox, etc)
+    : Platform.isIOS
+        ? 'http://localhost:3000' // iOS Simulator
+        : 'http://10.0.2.2:3000'; // Android Emulator
 
 const FAVORITE_PRODUCT_BOX = 'FAVORITE_PRODUCT_BOX';
 const USER_INFO_BOX = 'USER_INFO_BOX';

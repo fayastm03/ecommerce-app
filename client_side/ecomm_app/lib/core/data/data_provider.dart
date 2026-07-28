@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart' hide Category;
 import 'package:get/get.dart';
-import 'package:get_storage/get_storage.dart';
 import '../../../models/category.dart';
 import '../../models/api_response.dart';
 import '../../models/brand.dart';
@@ -9,9 +8,7 @@ import '../../models/order.dart';
 import '../../models/poster.dart';
 import '../../models/product.dart';
 import '../../models/sub_category.dart';
-import '../../models/user.dart';
 import '../../services/http_services.dart';
-import '../../utility/constants.dart';
 import '../../utility/snack_bar_helper.dart';
 
 class DataProvider extends ChangeNotifier {
@@ -54,7 +51,7 @@ class DataProvider extends ChangeNotifier {
   Future<List<Category>> getAllCategories({bool showSnack = false}) async {
     try {
       Response response = await service.getItems(endpointUrl: 'categories');
-      if (response.statusCode == 200) {
+      if (response.isOk) {
         ApiResponse<List<Category>> apiResponse =
             ApiResponse<List<Category>>.fromJson(
                 response.body,
@@ -219,7 +216,7 @@ class DataProvider extends ChangeNotifier {
   Future<List<Poster>> getAllPosters({bool showSnack = false}) async {
     try {
       Response response = await service.getItems(endpointUrl: 'posters');
-      if (response.statusCode == 200) {
+      if (response.isOk) {
         ApiResponse<List<Poster>> apiResponse =
             ApiResponse<List<Poster>>.fromJson(
                 response.body,

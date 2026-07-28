@@ -55,7 +55,7 @@ class ProductGridTile extends StatelessWidget {
                     color:
                         favoriteProvider.checkIsItemFavorite(product.sId ?? '')
                             ? Colors.red
-                            : Color(0xFFA6A3A0),
+                            : const Color(0xFFA6A3A0),
                   ),
                   onPressed: () {
                     context.favoriteProvider
